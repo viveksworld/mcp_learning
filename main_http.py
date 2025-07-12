@@ -2,7 +2,7 @@ from mcp.server.fastmcp import FastMCP
 import json
 
 
-mcp = FastMCP("Joke-Generator-MCP")
+mcp = FastMCP("Joke-Generator-MCP", port=8080)
 
 @mcp.tool()
 def get_joke(category: str):
