@@ -6,8 +6,10 @@ mcp = FastMCP("Joke-Generator-MCP", host="0.0.0.0", port=8080)
 
 @mcp.tool()
 def get_joke(category: str):
-    """
-    This function returns a joke from a given category.
+    """Gets a joke from a specific category.
+
+    Args:
+        category: The category of the joke. Supported values are "dad" and "tech".
     """
     if category == "dad":
         return json.dumps({"joke": "Why don't scientists trust atoms? Because they make up everything!"})
