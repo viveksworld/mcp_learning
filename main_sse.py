@@ -19,8 +19,7 @@ def get_joke(category: str):
 
 def main():
     print("Starting MCP server...")
-    #mcp.run(transport="streamable-http")
-    # mcp.run(transport="sse")
+    mcp.run(transport="sse")
 
 
 if __name__ == "__main__":
