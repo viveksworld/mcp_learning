@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import json
 
 
-mcp = FastMCP("Joke-Generator-MCP",  port=8081)
+mcp = FastMCP("Joke-Generator-MCP",  host="0.0.0.0", port=8081)
 
 class JokeCategory(BaseModel):
     category: str
